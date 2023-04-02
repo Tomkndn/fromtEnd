@@ -59,7 +59,6 @@ a{
     color: #fff;
     background-color: #4C5FD5;
     border: 0.1px #4C5FD5 solid;
-    transition: ease-in-out 0.3s;
 }
 #submit{
     text-decoration: none;
@@ -76,6 +75,7 @@ a{
     cursor: pointer;
     color: #000000;
     background-color: white;
+    transition: ease-in-out 0.3s;
 }
 section{
     display: flex;
