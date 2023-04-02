@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+    /* height: 100%; */
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-left:hover{
+    opacity: 69%;
+}
+nav{
+    /* position: relative; */
+    background-color: #000000;
+    color: #fff;
+    height: 5.8vw;
+    font-size: 2.5rem;
+    display: flex;
+    /* display: grid; */
+    gap: 2rem;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.help{
+    color: #fff;
+}
+.help:hover,.link:hover{
+    text-decoration: underline;
+}
+.nav-left{
+    margin-left: 100px;
+    color: #fff;
+}
+.nav-right{
+    margin-left: auto;
+    margin-right: 70px;
+}
+.vl{
+    background-color: #fff;
+    height: 3rem;
+    width: 0.2rem;
+}
+#sign{
+    text-decoration: none;
+    height: 3.8vw;
+    width: 9vw;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4C5FD5;
+    border: 0.1px #4C5FD5 solid;
+    transition: ease-in-out 0.3s;
+}
+#submit{
+    text-decoration: none;
+    height: 3.8vw;
+    width: 16vw;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    color: #fff;
+    border: 0.1px #fff solid;
+    background-color: #1c1c1c;
+    cursor: pointer;
+}
+#sign:hover{
+    cursor: pointer;
+    color: #000000;
+    background-color: white;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadbf1;
+    color: #000000;
+    font-size: 7rem;
+    height: 25vw;
+    flex-direction: column;
+}
+#input{
+    margin: 2vw;
+    padding: 1vw;
+    width: 40vw;
+    height: 3.5vw;
+    font-size: 2.2rem;
+    border: #1c1c1c solid 1px;
+    box-shadow: 10px 5px 5px rgb(6, 6, 6);
+}
+.search{
+    position: relative;
+    right: -18vw;
+    bottom: 6vw;
+}
+#input:hover{
+    border: #2d335b solid 2px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    margin: 10vw;
+    font-size: 2.1rem;
+    gap: 50px;
+}
+.container-items{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    /* align-items: center; */
+}
+
+.link1{
+    /* font-size: 2rem; */
+    color: #4C5FD5;
+}
+.title-1{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+footer{
+    background-color: #000000;
+    height: 25vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    color: #fff;
+    font-size: 1.7rem;
+    padding-top: 45px;
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.title1{
+    font-size: 2rem;
+    align-content: end;
+}
+.sticky{
+    position: fixed;
+    bottom: 0.5vw;
+    right: 0.5vw;
+    text-decoration: none;
+    height: 3.8vw;
+    width: 8vw;
+    font-size: 2.5rem;
+    border-radius: 35px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4C5FD5;
+    border: 1px #4C5FD5 solid;
+}
+@media (max-width:1260px) {
+    html{
+        font-size: 7.5px;
+    }
+    .search{
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+}
+@media (max-width:970px){
+    html{
+        font-size: 6.5px;
+    }
+    .search{
+        display: block;
+        height: 20px;
+        width: 20px;
+    }
+    .sticky1{
+        display: block;
+        height: 28px;
+        width: 40px;
+    }
+    .sticky{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        height: 40px;
+        width: 40px;
+    }
+    .span{
+        visibility: hidden;
+        display: none;
+    }
+    .container-items{
+        line-height: 20px   ;
+    }
+}
+@media (max-width:860px){
+    html{
+        font-size: 5.5px;
+    }
+    .sticky1{
+        display: block;
+        height: 18px;
+        width: 32px;
+    }
+    .sticky{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        height: 31.8px;
+        width: 32px;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
+    .link{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:700px){
+    html{
+        font-size: 4.2px;
+    }
+    .title-1{
+        font-weight: bolder;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        margin-left: 20vw;
+        font-size: 2.1rem;
+        gap: 40px;
+    }
+    .container-items{
+        align-items: center;
+        font-size: 3rem;
+    }
+    footer{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
